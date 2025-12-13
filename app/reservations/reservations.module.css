@@ -1,0 +1,88 @@
+.pageContainer {
+    padding-top: 5rem;
+    background: var(--background);
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--secondary-foreground);
+    font-size: 1.1rem;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+}
+
+.form {
+    background: rgba(30, 41, 59, 0.4);
+    padding: 3rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--foreground);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.input {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+textarea.input {
+    resize: vertical;
+}
+
+@media (max-width: 600px) {
+    .form {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
